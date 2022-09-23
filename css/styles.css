@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+/* Primary */
+
+--darkCyan: hsl(185, 75%, 39%);
+--veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+--darkGrayishBlue: hsl(227, 10%, 46%);
+
+/* Neutral */
+--darkGray: hsl(0, 0%, 59%);
+
+/*font*/
+--font-main: 'Kumbh Sans', sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkCyan);
+    font-family: var(--font-main);
+}
+hr {
+    width: 100%;
+    color: var(--darkGray);
+}
+img {
+    display: inherit;
+}
+h1 {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+p {
+    color: var(--darkGray);
+}
+h2 {
+    font-size: 1.5em;
+}
+
+.grid {
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenido img {
+    width: 7em;
+    border-radius: 100%;
+    margin-top: -15%;
+    border: 5px solid white;
+}
+.nombre-edad-ciudad {
+    padding: 25px 0px;
+}
+.nombre-edad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nombre-edad p {
+    display: flex;
+    font-size: 1.2em;
+}
+.datos {
+    display: flex;
+    padding: 25px 0px;
+}
+
+.datos p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.dato-individual {
+    margin: 0px 20px;
+}
